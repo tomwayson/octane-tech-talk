@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Ember Octane & Hub</title>
 
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
@@ -12,6 +12,12 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<style>
+			.reveal section img {
+				border: 0;
+			}
+		</style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -25,8 +31,16 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown="slides.md"
+				data-separator="^\n\n\n"
+				data-separator-vertical="^\n\n"
+				data-separator-notes="^Note:"
+				data-charset="utf-8">
+					<!--
+							Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+							For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+					-->
+				</section>
 			</div>
 		</div>
 
